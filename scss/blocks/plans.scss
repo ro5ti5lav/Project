@@ -1,0 +1,151 @@
+@import '../variables';
+
+.plans {
+
+  padding: 57px 0;
+  position: relative;
+
+
+  &__p {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+  }
+
+  &__p {
+    span {
+      position: relative;
+    }
+  }
+
+  &__p span::before {
+    display: block;
+    width: 534px;
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #000;
+    top: 50%;
+    left: 110px;
+
+  }
+
+  &__img {
+
+    width: 100%;
+    height: 100%;
+
+    .images {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+
+    }
+  }
+
+  &__drr {
+    padding: 46px 5px;
+    text-align: left;
+    margin-right: 532px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+    padding-top: 20px;
+  }
+
+  .grid-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .grid-item h3 {
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .grid-item p {
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .grid-item button {
+
+    text-align: center;
+    background-color: #2C3878;
+    color: white;
+    padding: 14px 32px;
+
+  }
+
+  .grid-item:nth-child(2) h3,
+  .grid-item:nth-child(2) p,
+  .grid-item:nth-child(2) button {
+    position: relative;
+    top: 11px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .plans {
+
+    &__drr {
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .grid-item:nth-child(2) h3,
+    .grid-item:nth-child(2) p,
+    .grid-item:nth-child(2) button {
+      position: relative;
+      top: 10px;
+    }
+
+
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .plans {
+    padding: 10px;
+
+    &__drr {
+      width: 100%;
+      font-size: 10px;
+    }
+
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .grid-item:nth-child(2) h3,
+    .grid-item:nth-child(2) p,
+    .grid-item:nth-child(2) button {
+      position: relative;
+      top: 10px;
+    }
+  }
+
+}

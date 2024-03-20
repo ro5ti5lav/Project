@@ -1,0 +1,173 @@
+@import '../variables';
+
+.pdf {
+    padding: 57px 0;
+    position: relative;
+    height: 400px;
+
+    &__p {
+        text-align: left;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+
+    }
+
+    &__p {
+        span {
+            position: relative;
+        }
+    }
+
+    &__p span::before {
+        display: block;
+        width: 550px;
+        content: '';
+        position: absolute;
+        border-bottom: 2px solid #000;
+        top: 50%;
+        left: 80px;
+
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 140%;
+        max-width: 550px;
+        color: $Grayscale50;
+        margin-bottom: 20px;
+
+
+    }
+
+    &__image {
+        object-fit: cover;
+        width: 138px;
+        height: 138px;
+        top: 160px;
+        left: 525px;
+        position: absolute;
+
+    }
+
+
+    &__link_button {
+        color: #fff;
+        padding: 14px 32px;
+        background: $PrimaryBlue100;
+        top: 290px;
+        left: 0px;
+        position: absolute;
+    }
+
+    ul {
+        margin-left: 20px;
+
+    }
+
+}
+
+@media screen and (max-width: 1279px) and (min-width: 767px) {
+    .pdf {
+        &__image {
+            object-fit: cover;
+            width: 100px;
+            height: 100px;
+            top: 160px;
+            left: 600px;
+            position: absolute;
+
+        }
+
+        &__link_button {
+            color: #fff;
+            padding: 14px 32px;
+            background: $PrimaryBlue100;
+            top: 290px;
+            left: 3px;
+            position: absolute;
+        }
+
+        &__title {
+            font-weight: bold;
+            font-size: 37px;
+            line-height: 140%;
+            max-width: 550px;
+            color: $Grayscale50;
+            margin-bottom: 20px;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    .pdf {
+        &__image {
+            object-fit: cover;
+            width: 100px;
+            height: 100px;
+            top: 160px;
+            left: 600px;
+            position: absolute;
+
+        }
+
+        &__link_button {
+            color: #fff;
+            padding: 14px 32px;
+            background: $PrimaryBlue100;
+            top: 290px;
+            left: 3px;
+            position: absolute;
+        }
+
+        &__title {
+            font-weight: bold;
+            font-size: 37px;
+            line-height: 140%;
+            max-width: 550px;
+            color: $Grayscale50;
+            margin-bottom: 20px;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pdf {
+        padding: 10px;
+
+        &__image {
+            object-fit: cover;
+            width: 80px;
+            height: 80px;
+            top: 215px;
+            left: 3px;
+            position: absolute;
+
+        }
+
+        &__link_button {
+            color: #fff;
+            padding: 14px 32px;
+            background: $PrimaryBlue100;
+            top: 305px;
+            left: 3px;
+            position: absolute;
+        }
+
+        &__title {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 140%;
+            max-width: 550px;
+            color: $Grayscale50;
+            margin-bottom: 20px;
+        }
+
+
+    }
+}
