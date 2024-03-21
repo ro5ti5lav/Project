@@ -22,7 +22,7 @@
         width: 100%;
         color: white;
         padding-top: 150px;
-        font-size: 32px;
+        font-size: 2em;
         padding-left: 20px;
 
     }
@@ -58,12 +58,16 @@
         width: 100%;
         color: white;
         padding-top: 150px;
-        font-size: 20px;
+        font-size: 2em;
         padding-left: 80px;
 
 
     }
 
+
+}
+
+@media screen and (min-width: 1279px) {
     .f3:nth-child(1) {
         grid-column: 1;
         grid-row: 1;
@@ -129,11 +133,7 @@
         padding-left: 20px;
     }
 
-    .f3 {
-        text-align: left;
-        font-size: 1em;
-        color: white;
-    }
+
 }
 
 
@@ -159,14 +159,14 @@
         grid-row: 3;
     }
 
-    .f3 {
+    .footer .f3 {
         text-align: left;
         font-size: 1em;
         color: white;
     }
 
 
-    .f4 {
+    .footer .f4 {
         font-size: 15px;
         padding-top: 30px;
     }
@@ -176,7 +176,7 @@
         padding-left: 20px;
     }
 
-    .button1 {
+    .footer .button1 {
         padding-top: 100px;
         padding-left: 20px;
         font-size: 20px;
