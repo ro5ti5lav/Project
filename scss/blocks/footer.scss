@@ -14,14 +14,14 @@
         color: white;
         padding-top: 77px;
         padding-left: 20px;
-
+        padding-bottom: 150px;
     }
 
     .f4 {
         text-align: left;
         width: 100%;
         color: white;
-        padding-top: 150px;
+
         font-size: 2em;
         padding-left: 20px;
 
@@ -53,11 +53,11 @@
     }
 
     .button1 {
-        width: 230px;
+
         height: 49px;
         width: 100%;
         color: white;
-        padding-top: 150px;
+
         font-size: 2em;
         padding-left: 80px;
 
@@ -68,6 +68,13 @@
 }
 
 @media screen and (min-width: 1279px) {
+
+    .footer .order__form {
+        margin: 0 auto;
+        width: 410px;
+        margin-top: 87px;
+    }
+
     .f3:nth-child(1) {
         grid-column: 1;
         grid-row: 1;
@@ -81,10 +88,29 @@
 
 @media screen and (max-width: 1279px) and (min-width: 767px) {
 
+    .footer .order__form {
+        padding-bottom: 50px;
+        width: 100%;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+
+    .footer .button1 {
+        height: 49px;
+        width: 100%;
+        color: white;
+        font-size: 2em;
+        padding-left: 10px;
+    }
+
     .order__form:nth-child(3) {
         grid-column: 1;
         grid-row: 2;
 
+    }
+
+    .f3:nth-child(1) {
+        grid-column: span 2;
     }
 
     .button1:nth-child(4) {
@@ -97,20 +123,47 @@
         grid-row: 3;
     }
 
-    .order__form {
-        width: 370px;
-        padding-left: 20px;
-    }
-
-    .f3 {
+    .footer .f3 {
         text-align: left;
         font-size: 2em;
         color: white;
+        padding-bottom: 5px;
     }
 }
 
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
+
+    .footer .f3 {
+        text-align: left;
+        font-size: 2em;
+        color: white;
+        padding-bottom: 5px;
+    }
+
+    .footer .f4 {
+        text-align: left;
+        width: 100%;
+        color: white;
+        font-size: 2em;
+        padding-left: 10px;
+
+    }
+
+    .footer .order__form {
+        padding-bottom: 50px;
+        width: 100%;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+
+    .footer .button1 {
+        height: 49px;
+        width: 100%;
+        color: white;
+        font-size: 2em;
+        padding-left: 10px;
+    }
 
     .order__form:nth-child(3) {
         grid-column: 1;
@@ -119,25 +172,24 @@
     }
 
     .button1:nth-child(4) {
-        grid-column: 2;
+        grid-column: 1;
         grid-row: 3;
     }
 
     .f4:nth-child(2) {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 4;
     }
 
-    .order__form {
-        width: 370px;
-        padding-left: 20px;
+    .f3:nth-child(1) {
+        grid-column: span 2;
+        grid-row: 1;
     }
-
 
 }
 
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 360px) {
 
     .order__form:nth-child(3) {
         grid-column: 1;
@@ -171,26 +223,15 @@
         padding-top: 30px;
     }
 
-    .order__form {
-        width: 370px;
-        padding-left: 20px;
-    }
-
     .footer .button1 {
-        padding-top: 100px;
         padding-left: 20px;
-        font-size: 20px;
-    }
-}
-
-
-
-@media screen and (max-width: 365px) {
-
-    .f3 {
         font-size: 15px;
-        width: 100%;
-        text-align: left;
+    }
 
+    .footer .order__form {
+        padding-bottom: 50px;
+        width: 100%;
+        padding-left: 20px;
+        margin-top: 20px;
     }
 }
