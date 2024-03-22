@@ -50,11 +50,21 @@
   }
 }
 
+@media screen and (max-width: 1278px) {
+  .map {
+
+    &__drr {
+      width: 80%;
+      font-size: 18px;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .map {
 
     &__drr {
-      width: 100%;
+      width: 80%;
       font-size: 18px;
     }
 

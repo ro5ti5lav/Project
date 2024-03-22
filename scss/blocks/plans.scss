@@ -100,8 +100,16 @@
   }
 }
 
+@media screen and (max-width: 1278px) and (min-width: 768px) {
+  .plans {
+    &__drr {
+      width: 80%;
+      font-size: 18px;
+    }
+  }
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 480px) {
   .plans {
 
     &__drr {
